@@ -14,6 +14,8 @@ before_script:
   - cp ./travis/ProvisioningProfile.mobileprovision ~/Library/MobileDevice/Provisioning\ Profiles
 script:
   - 'xctool -project HelloWorld.xcodeproj -scheme HelloWorld -sdk iphoneos -configuration Release CODE_SIGN_IDENTITY="iPhone Distribution" ONLY_ACIVE_ARCH=NO DSTROOT=build OBJROOT=build/objects SYMROOT=build build'
-  - 'xcrun -log -sdk iphoneos PackageApplication "build/Release-iphoneos/HelloWorld.app" -o "build/Release-iphoneos/HelloWorld.ipa" -sign "iPhone Distribution: Henrik Elstad Hodne (UFBY3M7V5Z)" -embed "travis/ProvisioningProfile.mobileprovision"'
+#   - 'xcrun -log -sdk iphoneos PackageApplication "build/Release-iphoneos/HelloWorld.app" -o "build/Release-iphoneos/HelloWorld.ipa" -sign "iPhone Distribution: Henrik Elstad Hodne (UFBY3M7V5Z)" -verbose -embed "travis/ProvisioningProfile.mobileprovision"'
+  - 'xcodebuild -project HelloWorld.xcodeproj -scheme HelloWorld -sdk iphoneos -configuration Release CODE_SIGN_IDENTITY="iPhone Distribution" ONLY_ACTIVE_ARCH=NO DSTROOT=build OBJROOT=build/object SYMROOT=build archive'
+  - 'ls -R build'
   - 'zip -r -9 "build/Release-iphoneos/HelloWorld.app.dSYM.zip" "build/Release-iphoneos/HelloWorld.app.dSYM"'
   - 'curl http://testflightapp.com/api/builds.json -F file="@build/Release-iphoneos/HelloWorld.ipa" -F dsym="@build/Release-iphoneos/HelloWorld.app.dSYM.zip" -F api_token="$TF_API_TOKEN" -F team_token="$TF_TEAM_TOKEN" -F distribution_lists="Internal" -F notes="Test Travis build" -v'
