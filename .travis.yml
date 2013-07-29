@@ -10,6 +10,8 @@ before_script:
   - security import ./travis/apple.cer -k ~/Library/Keychains/ios-build.keychain -T /usr/bin/codesign
   - security import ./travis/dist.cer -k ~/Library/Keychains/ios-build.keychain -T /usr/bin/codesign
   - security import ./travis/dist.p12 -k ~/Library/Keychains/ios-build.keychain -P "$KEY_PASSWORD" -T /usr/bin/codesign
+  - mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
+  - cp ./travis/ProvisioningProfile.mobileprovision ~/Library/MobileDevice/Provisioning\ Profiles
 script:
   - 'xctool -project HelloWorld.xcodeproj -scheme HelloWorld -sdk iphoneos -configuration Release CODE_SIGN_IDENTITY="iPhone Distribution" ONLY_ACIVE_ARCH=NO DSTROOT=build OBJROOT=build/objects SYMROOT=build build'
   - 'xcrun -log -sdk iphoneos PackageApplication "build/HelloWorld.app" -o "build/HelloWorld.ipa" -sign "iPhone Distribution: Henrik Elstad Hodne (UFBY3M7V5Z)" -embed "travis/ProvisioningProfile.mobileprovision"'
