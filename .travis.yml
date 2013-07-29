@@ -1,7 +1,7 @@
 language: objective-c
 env:
   global:
-    - secure: "BD9zaTvCAobiaMK0mwrRJoTExOXDHUbJms/bkJMn1MenvepmSoGkn1y5/bKCdLc+sC8sNg/+URmSqVIgjft31P5ORYiyIlG8qMDydMD2WJy4wlDRG3XGKJgum7P6hcxnyg/nE8N3U5kMFPAAAz670h6F0AP3BdMBItWKL2yanpc="
+    - secure: "Y/Og8Ij6b+TFcug1al84+uomUxT3Mi7Ssk97b3fw6Snmf7SNEhg8AcQv5joipa9qgHnEtFlQ53plxjX+5y244g2mwcXBBUVMrB7Nwnfu512fEqDnY1lck4lPRSDtNbtBOAiSOxjBGT7TspSyPRHu8HhzhRoCF4P1j+P4LKSAtq4="
     - secure: "k7un/9EQpGYSa+Xy+3I1fookpHTP7FP794/wOwQAojs1t7Vbce2+QyThEVHBYqLKeRle+Cp38BJ6h5GssYcNVyE5b+r8CKwDRfYfZzTmqLq0Hvhgm4rP24n03ZXOpwJQw344YFiZ7ilXYs73q1N4RFJLeHNStuDZwwYCEYRr+Gg="
     - secure: "nVXeMBnkQfCB2HNfwwbhgluSE5aHH7bZANMr+Vv7CEH9pEsMHDjr7Tu70BSQagQdP6/V2tyARAHDKVf9LOMfCCvREYWP4Cy2t02/QmlKC74rTgjpBd7KiDkqD1W8nWhOu9bqpvWCn66t9jqWJwWPaknhnAxy2ZeubZhaFDe7NQI="
 install: true
