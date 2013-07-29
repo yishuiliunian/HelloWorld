@@ -13,7 +13,6 @@
 		AC9D6A8817A70973001FE2F2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC9D6A8617A70973001FE2F2 /* InfoPlist.strings */; };
 		AC9D6A8A17A70973001FE2F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC9D6A8917A70973001FE2F2 /* main.m */; };
 		AC9D6A8E17A70973001FE2F2 /* HWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC9D6A8D17A70973001FE2F2 /* HWAppDelegate.m */; };
-		AC9D6A9117A70973001FE2F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC9D6A8F17A70973001FE2F2 /* Main.storyboard */; };
 		AC9D6A9417A70973001FE2F2 /* HWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC9D6A9317A70973001FE2F2 /* HWViewController.m */; };
 		AC9D6A9617A70973001FE2F2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC9D6A9517A70973001FE2F2 /* Images.xcassets */; };
 		AC9D6A9D17A70973001FE2F2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC9D6A9C17A70973001FE2F2 /* XCTest.framework */; };
@@ -21,6 +20,7 @@
 		AC9D6A9F17A70973001FE2F2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC9D6A8117A70973001FE2F2 /* UIKit.framework */; };
 		AC9D6AA717A70973001FE2F2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC9D6AA517A70973001FE2F2 /* InfoPlist.strings */; };
 		AC9D6AA917A70973001FE2F2 /* HelloWorldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC9D6AA817A70973001FE2F2 /* HelloWorldTests.m */; };
+		ACA9F2A717A71DB200509D3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACA9F2A617A71DB200509D3A /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +44,6 @@
 		AC9D6A8B17A70973001FE2F2 /* HelloWorld-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloWorld-Prefix.pch"; sourceTree = "<group>"; };
 		AC9D6A8C17A70973001FE2F2 /* HWAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HWAppDelegate.h; sourceTree = "<group>"; };
 		AC9D6A8D17A70973001FE2F2 /* HWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HWAppDelegate.m; sourceTree = "<group>"; };
-		AC9D6A9017A70973001FE2F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC9D6A9217A70973001FE2F2 /* HWViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HWViewController.h; sourceTree = "<group>"; };
 		AC9D6A9317A70973001FE2F2 /* HWViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HWViewController.m; sourceTree = "<group>"; };
 		AC9D6A9517A70973001FE2F2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -53,6 +52,7 @@
 		AC9D6AA417A70973001FE2F2 /* HelloWorldTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HelloWorldTests-Info.plist"; sourceTree = "<group>"; };
 		AC9D6AA617A70973001FE2F2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AC9D6AA817A70973001FE2F2 /* HelloWorldTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldTests.m; sourceTree = "<group>"; };
+		ACA9F2A617A71DB200509D3A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,11 +114,11 @@
 			children = (
 				AC9D6A8C17A70973001FE2F2 /* HWAppDelegate.h */,
 				AC9D6A8D17A70973001FE2F2 /* HWAppDelegate.m */,
-				AC9D6A8F17A70973001FE2F2 /* Main.storyboard */,
 				AC9D6A9217A70973001FE2F2 /* HWViewController.h */,
 				AC9D6A9317A70973001FE2F2 /* HWViewController.m */,
 				AC9D6A9517A70973001FE2F2 /* Images.xcassets */,
 				AC9D6A8417A70973001FE2F2 /* Supporting Files */,
+				ACA9F2A617A71DB200509D3A /* Main.storyboard */,
 			);
 			path = HelloWorld;
 			sourceTree = "<group>";
@@ -231,7 +231,7 @@
 			files = (
 				AC9D6A9617A70973001FE2F2 /* Images.xcassets in Resources */,
 				AC9D6A8817A70973001FE2F2 /* InfoPlist.strings in Resources */,
-				AC9D6A9117A70973001FE2F2 /* Main.storyboard in Resources */,
+				ACA9F2A717A71DB200509D3A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,14 +281,6 @@
 				AC9D6A8717A70973001FE2F2 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		AC9D6A8F17A70973001FE2F2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AC9D6A9017A70973001FE2F2 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		AC9D6AA517A70973001FE2F2 /* InfoPlist.strings */ = {
@@ -378,6 +370,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HelloWorld/HelloWorld-Prefix.pch";
 				INFOPLIST_FILE = "HelloWorld/HelloWorld-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -391,6 +384,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HelloWorld/HelloWorld-Prefix.pch";
 				INFOPLIST_FILE = "HelloWorld/HelloWorld-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -455,6 +449,7 @@
 				AC9D6AAE17A70973001FE2F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AC9D6AAF17A70973001FE2F2 /* Build configuration list for PBXNativeTarget "HelloWorldTests" */ = {
 			isa = XCConfigurationList;
@@ -463,6 +458,7 @@
 				AC9D6AB117A70973001FE2F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
